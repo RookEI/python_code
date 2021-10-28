@@ -1,11 +1,10 @@
-def sum_value(param1,param2):
+def loop_over_list():
+    numbers = [1, 2, 3, 4, 5, 6]
+    result = []
 
-    solution = param1 + param2
-
-    return solution
-
-
-param1 = 1
-param2 = 2
-
-print(sum_value(param1, param2))
+    # Write your code here
+    for number in numbers:
+        result.append(number)
+        number = range(number)
+        print(number)
+    return result
