@@ -1,31 +1,20 @@
 <!DOCTYPE html>
-<html = lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-    <title>Blake and Max Health Weekly</title>
-  </head>
-  <body>
-
-    <div class="navigation-wrapper">
-      <div class="left-column">
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Blake and Max Health Weekly</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+   </head>
+   <body>
+      {% include 'includes/_navbar.html' %}
+      <div class="container">
       </div>
-
-        <div class="center-column">
-          <div class="links-wrapper">
-
-            <div class="nav-link">
-              <a href="about.html">About Us</a>
-            </div>
-
-            <div class="nav-link">
-              <a href="newsletter.html">Newsletter</a>
-            </div>
-
-            <div class="nav-link">
-              <a href="contact.html">Contact</a>
-            </div>
-        </div>
-      </div>
-    <p> This is the content here</p>
-  </body>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+      </script>
+      {% block body %}
+   <div class="jumbotron text-center">
+      <h1>Welcome to Blake and Max Health Weekly</h1>
+   </div>
+   {% endblock %}
+   </body>
 </html>

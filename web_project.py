@@ -7,9 +7,6 @@ client = MongoClient(port=27017)
 db=client.test
 app = Flask(__name__)
 
-serverStatusResult=db.command("serverStatus")
-pprint(serverStatusResult)
-
 
 @app.route('/')
 def home():
@@ -27,9 +24,9 @@ def newsletter():
 def index():
 	return render_template("index.html")
 
-@app.route('/contact')
-def contact():
-	return render_template("contact.html")
+@app.route('/blog')
+def blog():
+	return render_template("blog.html")
 
 
 if __name__ == "__main__":
